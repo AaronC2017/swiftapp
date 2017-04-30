@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     var tapCount = 0
     @IBAction func buttonTapped(_ sender: Any) {
-        // if button tapped print hello world
+        // if button tapped count
         tapCount = tapCount + 1
         print (tapCount)
         if tapCount > 9 {
