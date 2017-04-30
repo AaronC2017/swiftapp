@@ -24,12 +24,8 @@ class ViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: Any) {
         // if button tapped count
         tapCount = tapCount + 1
-        print (tapCount)
-        print (text1.text!)
-        print (text2.text!)
-        if tapCount > 9 {
-            theLabel.text = "Woah woah woah!"
-        }
+        theLabel.text = "\(Double(text1.text!)! + Double(text2.text!)!)"
+        
     }
 
     override func viewDidLoad() {
