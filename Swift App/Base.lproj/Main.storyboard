@@ -21,31 +21,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello there!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjo-Fv-WQe">
-                                <rect key="frame" x="143" y="323" width="88.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello there!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjo-Fv-WQe">
+                                <rect key="frame" x="143" y="202" width="88.5" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8P-fi-1t0">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8P-fi-1t0">
                                 <rect key="frame" x="155" y="424" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Push Me!"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yQz-dD-wWh"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-UR-CN9">
+                                <rect key="frame" x="137.5" y="275" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="elb-c1-1Vt">
+                                <rect key="frame" x="137.5" y="335" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Cjo-Fv-WQe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0jq-iI-Bcw"/>
-                            <constraint firstItem="j8P-fi-1t0" firstAttribute="top" secondItem="Cjo-Fv-WQe" secondAttribute="bottom" constant="98" id="2qh-fJ-ut9"/>
-                            <constraint firstItem="j8P-fi-1t0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S4X-Vb-nka"/>
-                            <constraint firstItem="Cjo-Fv-WQe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kMq-2B-jHO"/>
-                            <constraint firstItem="Cjo-Fv-WQe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="trg-fE-odF"/>
-                            <constraint firstItem="Cjo-Fv-WQe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zUL-Lw-R2R"/>
-                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="v2G-UR-CN9" id="Ws7-73-DGb"/>
+                        <outlet property="text2" destination="elb-c1-1Vt" id="das-Qc-r71"/>
                         <outlet property="theLabel" destination="Cjo-Fv-WQe" id="GWf-N0-FE7"/>
                     </connections>
                 </viewController>
